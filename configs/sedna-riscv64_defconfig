@@ -3281,8 +3281,8 @@ BR2_PACKAGE_IFUPDOWN_SCRIPTS=y
 # NetworkManager needs udev /dev management and a glibc toolchain w/ headers >= 4.6, dynamic library, wchar, threads, gcc >= 4.9
 #
 # BR2_PACKAGE_NFACCT is not set
-# BR2_PACKAGE_NFTABLES is not set
-# BR2_PACKAGE_NGINX is not set
+BR2_PACKAGE_NFTABLES=y
+BR2_PACKAGE_NGINX=y
 # BR2_PACKAGE_NGIRCD is not set
 # BR2_PACKAGE_NGREP is not set
 
