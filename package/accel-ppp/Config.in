@@ -1,0 +1,11 @@
+config BR2_PACKAGE_ACCEL_PPP
+	bool "accel-ppp"
+	depends on BR2_USE_MMU
+	depends on !BR2_STATIC_LIBS
+	select BR2_PACKAGE_OPENSSL
+	select BR2_PACKAGE_LIBOPENSSL
+	select BR2_PACKAGE_PCRE2
+	select BR2_PACKAGE_LIBUCONTEXT if BR2_TOOLCHAIN_USES_MUSL
+	help
+	  PPPoE/L2TP/PPTP/SSTP/IPoE server.
+	  https://github.com/accel-ppp/accel-ppp
